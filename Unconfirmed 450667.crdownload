@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("enter marks");
+		Scanner sc=new Scanner (System.in);
+		int english=sc.nextInt();
+		int maths =sc.nextInt();
+		int pps =sc.nextInt();
+		int chemistry =sc.nextInt();
+		int physics =sc.nextInt();
+		int sum,percentage;
+		sum=(english+maths+pps+chemistry+physics);
+		percentage=(sum/5);
+		System.out.println( "percent.=" +percentage);
+		if (percentage>=91 && percentage<=100)
+		{
+		    System.out.println("grade a");
+		}
+		else if (percentage>=81 && percentage<=90)
+		{
+		    System.out.println("grade b");
+		}
+		else if (percentage>=71 && percentage<=80)
+		{
+		    System.out.println("grade c");
+		}
+		else if (percentage >= 61 && percentage<=70)
+		{
+		    System.out.println("grade d");
+		}
+		else {
+		    System.out.println("FAIL");
+		}
+		
+		
+		
+	}
+}
